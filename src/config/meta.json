@@ -1,0 +1,11 @@
+{
+  "siteName": "Fergocia – Portfolio",
+  "description": "Portafolio personal basado en Bentos con Next.js",
+  "url": "https://example.com",
+  "socials": {
+    "twitter": "https://twitter.com/",
+    "github": "https://github.com/",
+    "linkedin": "https://www.linkedin.com/"
+  }
+}
+

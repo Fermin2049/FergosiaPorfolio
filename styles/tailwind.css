@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body { @apply bg-background text-gray-300; }
+  body { font-family: var(--font-poppins), Poppins, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'; }
+  h1 { @apply text-4xl md:text-5xl font-extrabold text-heading; }
+  h2 { @apply text-3xl md:text-4xl font-bold text-heading; }
+  h3 { @apply text-2xl md:text-3xl font-semibold text-heading; }
+  p  { @apply text-base md:text-lg text-subtitle; }
+}
+
+@layer components {
+  .btn-primary { @apply inline-flex items-center gap-2 px-5 py-3 rounded-full bg-primary text-white transition-colors hover:opacity-90; }
+  .badge      { @apply inline-block px-3 py-1 rounded-full border border-border text-subtitle; }
+}
+
+/* Preloader keyframes */
+@keyframes loader-rotate { 100% { transform: rotate(360deg) } }
+@keyframes loader-dash {
+  0% { stroke-dasharray: 1, 150; stroke-dashoffset: 0; }
+  50% { stroke-dasharray: 90, 150; stroke-dashoffset: -35; }
+  100% { stroke-dasharray: 90, 150; stroke-dashoffset: -124; }
+}

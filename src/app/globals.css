@@ -1,0 +1,12 @@
+@import "../../styles/tailwind.css";
+
+html, body, #__next {
+  height: 100%;
+}
+
+/* Smooth scroll/interaction defaults */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Font family is applied from Tailwind base using next/font variable */
