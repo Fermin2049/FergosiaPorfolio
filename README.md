@@ -13,39 +13,6 @@ Cada sección del sitio (Inicio, Sobre mí, Portfolio, Contacto) se muestra como
 - **[Framer Motion](https://www.framer.com/motion/)** – Animaciones declarativas y fluidas  
 - **RemixIcon** – Set de íconos modernos (importados por CDN o paquete npm)
 
----
-
-## 📂 Estructura del proyecto
-
-fergocia-portfolio/
-├── src/
-│ ├── app/
-│ │ ├── layout.jsx
-│ │ └── page.jsx
-│ ├── components/
-│ │ ├── Header.jsx
-│ │ ├── About.jsx
-│ │ ├── Portfolio.jsx
-│ │ ├── CallToAction.jsx
-│ │ ├── Footer.jsx
-│ │ ├── HorizontalSwiper.jsx
-│ │ └── SwiperContext.jsx
-│ └── styles/
-│ └── globals.css
-├── public/
-│ └── assets/
-│ └── images/
-├── package.json
-├── tailwind.config.js
-├── postcss.config.js
-├── next.config.mjs
-└── README.md
-
-yaml
-Copiar código
-
----
-
 ## ⚙️ Instalación y ejecución
 
 ### 1️⃣ Clonar el repositorio
