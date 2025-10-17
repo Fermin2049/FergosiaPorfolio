@@ -19,7 +19,8 @@ export default function Header() {
 	};
 
 	return (
-		<header className="main-header fixed top-0 left-0 z-50 w-full bg-black/80 backdrop-blur-md border-b border-border px-6 md:px-20 py-4 flex items-center justify-between transition-all">
+			<header className="main-header fixed top-0 left-0 z-50 w-full bg-black/80 backdrop-blur-md border-b border-border transition-all">
+				<div className="mx-auto w-full max-w-screen-2xl px-4 sm:px-6 md:px-8 lg:px-12 py-3 sm:py-4 flex items-center justify-between">
 			{/* === Logo / Brand === */}
 			<motion.div
 				initial={{ opacity: 0, y: -10 }}
@@ -84,7 +85,8 @@ export default function Header() {
 				>
 					Ver trabajos <i className="ri-arrow-right-up-line" />
 				</motion.a>
-			</div>
-		</header>
+				</div>
+				</div>
+			</header>
 	);
 }

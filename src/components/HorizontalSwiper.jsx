@@ -44,81 +44,29 @@ export default function HorizontalSwiper() {
 				keyboard={{ enabled: true, onlyInViewport: true }}
 				mousewheel={true}
 				pagination={{ clickable: true }}
-				className="w-screen h-screen"
+				className="w-screen h-screen overflow-hidden"
 			>
 				{/* Slide 1: Header + About */}
 				<SwiperSlide>
-					<section className="w-full h-screen bg-background">
-						<div className="relative mx-auto flex h-full max-w-6xl flex-col items-center justify-center gap-10 px-6">
-							<motion.div
-								initial={{ opacity: 0, y: 20 }}
-								animate={{ opacity: 1, y: 0 }}
-								transition={{ duration: 0.6 }}
-								className="w-full"
-							>
-								<Header />
-							</motion.div>
-							<motion.div
-								initial={{ opacity: 0, y: 20 }}
-								animate={{ opacity: 1, y: 0 }}
-								transition={{ duration: 0.6, delay: 0.1 }}
-								className="w-full"
-							>
-								<About />
-							</motion.div>
-						</div>
-					</section>
+					<motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="w-full h-full">
+						<Header />
+						<About />
+					</motion.div>
 				</SwiperSlide>
 
 				{/* Slide 2: Portfolio */}
 				<SwiperSlide>
-					<section className="w-full h-screen bg-background">
-						<div className="mx-auto flex h-full max-w-6xl items-center justify-center px-6">
-							<motion.div
-								initial={{ opacity: 0, y: 20 }}
-								whileInView={{ opacity: 1, y: 0 }}
-								viewport={{ once: true }}
-								transition={{ duration: 0.5 }}
-								className="w-full"
-							>
-								<Portfolio />
-							</motion.div>
-						</div>
-					</section>
+					<Portfolio />
 				</SwiperSlide>
 
 				{/* Slide 3: Call To Action */}
 				<SwiperSlide>
-					<section className="w-full h-screen bg-background">
-						<div className="mx-auto flex h-full max-w-6xl items-center justify-center px-6">
-							<motion.div
-								initial={{ opacity: 0, scale: 0.97 }}
-								whileInView={{ opacity: 1, scale: 1 }}
-								viewport={{ once: true }}
-								transition={{ duration: 0.5 }}
-								className="w-full"
-							>
-								<CallToAction />
-							</motion.div>
-						</div>
-					</section>
+					<CallToAction />
 				</SwiperSlide>
 
 				{/* Slide 4: Footer */}
 				<SwiperSlide>
-					<section className="w-full h-screen bg-background">
-						<div className="mx-auto flex h-full max-w-6xl items-center justify-center px-6">
-							<motion.div
-								initial={{ opacity: 0, y: 10 }}
-								whileInView={{ opacity: 1, y: 0 }}
-								viewport={{ once: true }}
-								transition={{ duration: 0.4 }}
-								className="w-full"
-							>
-								<Footer />
-							</motion.div>
-						</div>
-					</section>
+					<Footer />
 				</SwiperSlide>
 			</Swiper>
 		</SwiperContext.Provider>

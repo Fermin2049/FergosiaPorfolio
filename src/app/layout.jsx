@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
         />
         <meta name="theme-color" content="#000000" />
       </head>
-      <body className="antialiased">
+      <body className="antialiased bg-black text-gray-300 h-screen overflow-hidden">
         {children}
       </body>
     </html>
